@@ -4,6 +4,7 @@
  *
  */
 
+ var unicorn = null;
 
 /* Step 2
  *
@@ -11,7 +12,7 @@
  * then assign it to be the value of "Atari"
  *
  */
-
+var videogame_system = "Atari";
 
 /* Step 3
  *
@@ -19,6 +20,8 @@
  * and assign the value of sahara_animal to "The Addax"
  *
  */
+
+ var sahara_animal = "The Addax";
 
 
 /* Step 4
@@ -29,6 +32,8 @@
  * Capitalize the names.
  */
 
+ var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
 
 /* Step 5
  *
@@ -38,6 +43,8 @@
  *
  */
 
+ var galilean_moons = ["Io", "Europa", "Ganymede", "Callisto"];
+
 
 /* Step 6 φ
  *
@@ -45,6 +52,8 @@
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
+
+ var golden_ratio = 1.61803398874;
 
 
 /* Step 7
@@ -54,6 +63,8 @@
  *
  */
 
+ var earths_water_composition = 0.71;
+
 
 /* Step 8
  *
@@ -61,6 +72,8 @@
  * and assign the value of club_name to "Fight Club"
  *
  */
+
+ var club_name = "Fight Club";
 
 
 /* Step 9
@@ -72,6 +85,12 @@
  *   male    => "male"
  *   unknown => undefined
  */
+
+ var gender = {
+  female: "female",
+  male: "male",
+  unknown: undefined
+ };
 
 
 /* Step 10
@@ -87,6 +106,13 @@
  *
  */
 
+ var princess_leia = {
+  name : "Leia Organa",
+  money : 890,
+  age : 20,
+  gender : gender.female
+ };
+
 
 /* Step 11
  *
@@ -100,6 +126,12 @@
  *
  */
 
+ var domains = {
+  "ycombinator.com" : "198.41.190.47",
+  "laughingsquid.com" : "162.159.247.97",
+  "slumlordhosting.com" : "198.61.179.126",
+  "jsonformatter.curiousconcept.com" : "104.28.5.70"
+ };
 
 /* Step 12
  *
@@ -114,6 +146,15 @@
  *   Konqueror  => "konqueror.org"
  *
  */
+
+ var browsers = {
+  Chromium : "google.com",
+  Safari : "apple.com",
+  Opera : "opera.com",
+  Firefox : "mozilla.org",
+  Sleipnir : "fenrir-inc.com",
+  Konqueror : "konqueror.org"
+ };
 
 
 /* Step 13
@@ -133,12 +174,27 @@
  *
  */
 
+ var rainbow = {
+    colors : {
+           red : "#F0280A",
+           orange : "#FF8800",
+           yellow : "#FFDD00",
+           green : "#51AB0C",
+           blue : "#1593ED",
+           indigo : "#5215ED",
+           violet : "#A915ED"
+         },
+    isDouble : true
+
+}
+
+
 
 /* Step 14
  *
  * Declare an array named "linuxFlavors"
  * with the following values:
- * 
+ *
  * "Gentoo"
  * "Fedora"
  * "Debian"
@@ -148,12 +204,14 @@
  *
  */
 
+ var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"]
+
 
 /* Step 15
  *
  * Declare an array named "DNA" with the
  * following values:
- * 
+ *
  * "nucleatides"
  * "guanine"
  * "adenine"
@@ -162,12 +220,14 @@
  *
  */
 
+ var DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"]
+
 
 /* Step 16
  *
  * Define a literal object named "laptopCosts"
  * with properties and values set to:
- * 
+ *
  * MacBook      => 1500
  * Alienware    => 2500
  * HP           => 499
@@ -175,12 +235,19 @@
  *
  */
 
+ var laptopCosts = {
+  MacBook : 1500,
+  Alienware : 2500,
+  HP : 499,
+  Surface : 320
+ }
+
 
 /* Step 17
  *
  * Declare an array named "livingOrganismClassification"
  * with the following values:
- * 
+ *
  * "Kingdom"
  * "Phylum"
  * "Class"
@@ -191,12 +258,22 @@
  *
  */
 
+ var livingOrganismClassification = [
+  "Kingdom",
+  "Phylum",
+  "Class",
+  "Order",
+  "Family",
+  "Genus",
+  "Species"
+ ]
+
 
 /* Step 18
  *
  * Declare an array named "scmList" with
  * the following values:
- * 
+ *
  * "git"
  * "svn"
  * "mercurial"
@@ -205,12 +282,14 @@
  *
  */
 
+ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"]
+
 
 /* Step 19
  *
  * Define a literal object named "beers" with
  * properties and values set to:
- * 
+ *
  * IPA          => "Ale"
  * Lager        => "Strong"
  * Heffeweisen  => "German"
@@ -224,6 +303,15 @@
  *
  */
 
+ var beers = {
+  IPA : "Ale",
+  Lager : "Strong",
+  Heffeweisen : "German",
+  Stout : ["Thick", "Dark", "Rainbow", "Pizza"],
+  Porter : "Bitter",
+  Ale : ["Light", "Golden"]
+ }
+
 
 /* Step 20
  *
@@ -234,17 +322,25 @@
  *
  */
 
+function sahara_river (){
+  return "Nile River";
+}
+
 
 /* Step 21
  *
  * Define a function named "addNumbers"
  * that returns the sum of two numbers
- * 
+ *
  * @param {Number}
  * @param {Number}
  * @return {Number}
  *
  */
+
+ function addNumbers (x, y){
+  return x + y;
+ }
 
 
 /* Step 22
@@ -253,11 +349,19 @@
  * that takes a type of Linux as a parameter,
  * checks if it exists in "linuxFlavors" and
  * returns success or failure
- * 
+ *
  * @param {String}
  * @return {Bool}
  *
  */
+
+ function installLinux (type) {
+  if(linuxFlavors.indexOf(type) > -1){
+  return true;
+  } else {
+    return false;
+  }
+ }
 
 
 /* Step 23
@@ -266,17 +370,35 @@
  * a type of beer as a paramater. If it is not
  * a valid type of beer as defined in "beers",
  * return false. If it is valid, return the following phrases:
- * 
+ *
  * "This {beerName} is {beerDescription}."
- * 
+ *
  * Or, if there are multiple descriptions:
- * 
- * "This {beerName is {beerDescription1} and {beerDescription2} and..."
- * 
+ *
+ * "This {beerName is {beerDescription1} and {beerDescription2} and {beerDescription3}."
+ *
  * @param {String}
  * @return {Bool when False, String when True}
  *
  */
+
+function drink (beerType){
+  if (beerType in beers){
+
+    if(typeof beers[beerType] === "string"){
+      return "This " + beerType + " is " + beers[beerType] + "."
+    }
+    var beerDescription = "This " + beerType + " is " + beers[beerType][0];
+
+    console.log(beerDescription);
+
+    for(var i = 1; i < beers[beerType].length; i++){
+      beerDescription += " and " + beers[beerType][i];
+    }
+    return beerDescription += "."
+  }
+  return false;
+}
 
 
 /* Step 24
@@ -285,11 +407,31 @@
  * a browser and validates it, as defined by "browsers"
  * If the browser doesn't exist, return false.
  * If the browser exists, return the value which is a partial URL.
- * 
+ *
  * @param {String}
  * @return {String if true else return false}
  *
  */
+
+ function browseURL (browserTypes) {
+  if (browserTypes in browsers) {
+    if(typeof browser === ){
+
+    }
+
+  }
+
+
+ }
+
+ // var browsers = {
+ //  Chromium : "google.com",
+ //  Safari : "apple.com",
+ //  Opera : "opera.com",
+ //  Firefox : "mozilla.org",
+ //  Sleipnir : "fenrir-inc.com",
+ //  Konqueror : "konqueror.org"
+ // };
 
 
 /* Step 25
@@ -297,10 +439,14 @@
  * Define a function named "listLivingOrgClass" that
  * returns an HTML-formatted unordered list (<ul>) of all
  * living organism classifications as an list element(<li>)
- * 
+ *
  * @return {String}
  *
  */
+
+ function listLivingOrgClass () {
+
+ }
 
 
 /* Step 26
@@ -309,19 +455,23 @@
  * takes in the person's current planet and validates
  * that the planet exists. If it doesn't, return the
  * following message:
- * 
+ *
  * "{currentPlanet} is not a planet!"
- * 
+ *
  * If the planet does exist, select a different, random
  * planet from the "planets" variable. Once selected,
  * return the following message:
- * 
+ *
  * "I'm from {currentPlanet}, but I wish I could go to {randomPlanet}."
- * 
+ *
  * @param {String}
  * @return {String}
  *
  */
+
+ function favoritePlanet () {
+
+ }
 
 
 /* Step 27
@@ -332,7 +482,7 @@
  * named "spendMoney" and "earnMoney" that each take an
  * amount of money and add or subtract them to this
  * person's money.
- * 
+ *
  * class
  *   Person
  * properties
@@ -340,12 +490,16 @@
  *   @param {String} money
  *   @param {String} age
  *   @param {String} gender
- * 
+ *
  * methods
  *   spendMoney
  *   earnMoney
  *
  */
+
+ function Person (name, money, age, gender) {
+
+ }
 
 
 /* Step 28
@@ -354,11 +508,15 @@
  * a laptop as a parameter. If the laptop is valid as
  * defined in "laptopCosts" then return the cost as a string. Otherwise,
  * return -1
- * 
+ *
  * @param {String}
  * @return {String}
  *
  */
+
+ function purchaseLaptop () {
+
+ }
 
 
 /* Step 29
@@ -367,11 +525,15 @@
  * a club as a parameter. Return true if you can
  * talk about the club and false if the club passed
  * in has the same value as "club_name"
- * 
+ *
  * @param {String}
  * @return {Bool}
  *
  */
+
+ function canTalkAbout () {
+
+ }
 
 
 /* Step 30
@@ -379,49 +541,57 @@
  * Define a class named "Pen" with a property for
  * color and a class method named "write" that takes
  * a message string as a parameter and returns the
- * string back with the pen's color added to the 
+ * string back with the pen's color added to the
  * beginning of the string
  *
  * example: "{color}: {Message passed in}"
- * 
+ *
  * class
  *   Pen
- *   
+ *
  * properties
  *   @param {String} color
- *   
+ *
  * methods
  *   write
  *
  */
+
+ function Pen (color) {
+
+ }
 
 
 /* Step 31
  *
  * Define a class named "Garden" with a property for
  * the number of plants and whether it was recently
- * watered. 
- * 
+ * watered.
+ *
  * Define a class method named "water" which
  * sets the recently watered property to true
- * 
- * Defined a class method named "grow" which adds a plant to 
+ *
+ * Defined a class method named "grow" which adds a plant to
  * the garden if it was recently watered and exhausts the water.
- * If this method is called and the 'isWatered' property is 
+ * If this method is called and the 'isWatered' property is
  * false, it should return false;
- * 
+ *
  * class
  *   Garden
- *   
+ *
  * properties
- *   @param {Number} plantsTotal   
- *   @property {Bool:Not Passed as Argument - Default Value FALSE} isWatered 
- *   
+ *   @param {Number} plantsTotal
+ *   @property {Bool:Not Passed as Argument - Default Value FALSE} isWatered
+ *
  * methods
  *   water
  *   grow
- * 
+ *
  */
+
+ function Garden (plantsTotal) {
+
+ }
 
 
 /* Step 32
@@ -430,7 +600,7 @@
  * "planets" that is initialized as an empty array. Add
  * a method "addPlanet" that adds a planet to the list
  * and a method "removePlanet" that removes a planet.
- * 
+ *
  * class
  *   SolarSystem
  * properties
@@ -441,39 +611,48 @@
  *
  */
 
+ function SolarSystem (planets) {
+  this.addPlanet = addPlanet;
+  this.removePlanet = removePlanet;
+ }
+
 
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
  * with properties "name," "money," "age," "gender," and
  * "isInTrouble"(initialized as null)
- * 
+ *
  * Add a method "shootsGun" that returns a message
  * "Leia shoots her gun wildly"
  * and sets the isInTrouble property to FALSE
- * 
+ *
  * Add a method "getsInTrouble" that returns a message
  * "Help me Obi-wan Kenobi, you're my only hope"
  * and sets the property 'isInTroube' to TRUE
- * 
+ *
  * Add a method "marries" that takes a prospective
  * love interest and returns true for "Han Solo" or false for anyone
  * else.
- * 
+ *
  * In the 'marries' method - Add a message of disapproval for "Luke Skywalker"
  * "Gross!"
- * 
- * 
+ *
+ *
  * class
  *   PrincessLeia
  * properties
  *   isInTrouble
  * methods
- *   shootsGun 
+ *   shootsGun
  *   getsInTrouble
  *   marries
  *
  */
+
+ function PrincessLeia (){
+
+ }
 
 
 /* Step 34
@@ -483,7 +662,7 @@
  * number of papers as a parameter and returns true if the
  * papers are less than or equal to the papers and false
  * if there are too many papers to staple.
- * 
+ *
  * class
  *   Stapler
  * properties
@@ -493,6 +672,10 @@
  *   staplePapers
  *
  */
+
+ function Stapler (){
+
+ }
 
 
 /* Step 35
@@ -505,11 +688,11 @@
  * adds it to the discipline property. Return the value of the discipline property
  *
  * Add a method named 'checkDisciple' that takes a string as an argument and
- * checks if the argument can be found in the discipline property. Return false 
+ * checks if the argument can be found in the discipline property. Return false
  * if it is not found otherwise return back true.
  *
  * Add a method named 'addDiscovery' that takes a string as an argument and
- * adds it to the discoveries property. Return back the contents of the discoveries 
+ * adds it to the discoveries property. Return back the contents of the discoveries
  * property as a String made up of all the elements found see below
  *
  * examples:
@@ -518,10 +701,10 @@
  *
  * ["Gravity", "Theory of Relativity"] will be returned as:
  * "I discovered Gravity and Theory of Relativity."
- * 
+ *
  * ["Gravity", "Theory of Relativity", "Jesus Christ"] will be returned as:
  *       "I discovered Gravity, Theory of Relativity, and Jesus Christ."
- * 
+ *
  * class
  *   Scientist
  * properties
@@ -531,9 +714,12 @@
  *   addDiscipline
  *   checkDiscipline
  *   addDiscovery
- *   
+ *
  */
 
+function Scientist () {
+
+}
 
 /* Step 36
  *
@@ -543,7 +729,7 @@
  * their Person object, "deposit" that lets a Person spend
  * money to increase their balance, and "rob" that allows
  * any Person object to take money from the bank account.
- * 
+ *
  * class
  *   BankAccount
  * properties
@@ -555,6 +741,10 @@
  *   rob
  *
  */
+
+ function BankAccount () {
+
+ }
 
 
 /* Step 37
@@ -723,89 +913,129 @@
 
 /**
  * Step 50
- * 
+ *
  * Animal class
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
 
+ function Animal (species, gender){
+
+ }
+
 
 /**
  * Step 51
- * 
+ *
  * Vehicle class
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
 
+ function Vehicle (make, model) {
+
+ }
+
 
 /**
  * Step 52
- * 
+ *
  * Shape class
- * @param {number} sides The number of sides, should be a number 
+ * @param {number} sides The number of sides, should be a number
  * greater or equal to 3, if the number is less than 3 then set the
  * value of the sides property to null.
- * 
+ *
  */
+
+ function Shape (sides){
+
+ }
 
 
 /**
  * Step 53
- * 
+ *
  * Box class
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+function Box (contents, isOpen) {
+
+}
 
 /**
  * Step 54
- * 
+ *
  * Door class
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+ function Door (isOpen){
+
+ }
+
 
 /**
  * Step 55
- * 
+ *
  * Shoe class
  * @param {number} size  The shoe size
  * @param {string} color The shoe color
  */
 
+ function Shoe (size, color) {
+
+ }
+
 
 /**
  * Step 56
- * 
+ *
  * House class
  * @param {number} stories How many stories tall the house is
  */
 
+ function House (stories) {
+
+ }
+
 
 /**
  * Step 57
- * 
+ *
  * Lightbulb class
  * @param {boolean} isOn Whether the light is on or off
  */
 
+ function Lightbulb (isOn) {
+
+ }
+
 
 /**
  * Step 58
- * 
+ *
  * Cookie class
  * @param {string} flavor The cookie's flavor
  */
 
+ function Cookie (flavor) {
+
+ }
+
 
 /**
  * Step 59
- * 
+ *
  * Meal class
  * @param {Array} foods All the foods in the meal
  */
+
+ function Meal (foods) {
+
+
+ }
 
 
 /**
